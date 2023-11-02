@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
 }
 
 group = 'org.example'
@@ -9,11 +11,46 @@ repositories {
     mavenCentral()
 }
 
+javafx {
+    version = "19"
+    modules("javafx.controls", "javafx.fxml")
+}
+
+ext {
+    gsonVersion = '2.10.1'
+    hamcrestVersion = '2.2'
+    junitJupiterVersion = '5.9.3'
+    liquibaseVersion = '4.22.0'
+    lombokVersion = '1.18.28'
+    mockitoVersion = '5.4.0'
+    mybatisSpringBootVersion = '3.0.2'
+    springBootVersion = '3.1.0'
+    sqliteVersion = '3.42.0.0'
+}
+
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.9.1')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation "com.google.code.gson:gson:${gsonVersion}"
+    implementation "org.liquibase:liquibase-core:${liquibaseVersion}"
+    implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatisSpringBootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter:${springBootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-jdbc:${springBootVersion}"
+    implementation "org.xerial:sqlite-jdbc:${sqliteVersion}"
+
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+    testImplementation "org.hamcrest:hamcrest:${hamcrestVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitJupiterVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:${junitJupiterVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:${junitJupiterVersion}"
+    testImplementation "org.mockito:mockito-junit-jupiter:${mockitoVersion}"
 }
 
 test {
     useJUnitPlatform()
+}
+
+application {
+    mainClassName = "org.example.adapters.javafx.Main"
 }
