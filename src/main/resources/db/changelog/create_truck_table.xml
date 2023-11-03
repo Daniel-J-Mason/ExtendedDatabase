@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="create_truck_table" author="daniel-j-mason">
+        <createTable tableName="truck">
+            <column name="id" type="uuid">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="brand" type="text"/>
+            <column name="date" type="text"/>
+            <column name="truck_number" type="text"/>
+            <column name="revision_level" type="text"/>
+            <column name="main_notes" type="text"/>
+            <column name="special_notes" type="text"/>
+            <column name="mod_size" type="text"/>
+            <column name="conduit" type="text"/>
+            <column name="type_code" type="text"/>
+            <column name="skin_material" type="text"/>
+            <column name="compartment_material" type="text"/>
+            <column name="chassis_year" type="text"/>
+            <column name="chassis_make" type="text"/>
+            <column name="chassis_model" type="text"/>
+            <column name="customer_name" type="text"/>
+            <column name="designed_by" type="text"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

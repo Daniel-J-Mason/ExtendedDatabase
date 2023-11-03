@@ -5,8 +5,10 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-
-<!--    <include file="/db/changelog/create_decision_table.xml"/>-->
-
+    <include file="/db/changelog/create_truck_table.xml"/>
+    <include file="/db/changelog/create_drawing_table.xml"/>
+    <include file="/db/changelog/create_dxf_table.xml"/>
+    <include file="/db/changelog/create_truck_drawing_table.xml"/>
+    <include file="/db/changelog/create_truck_dxf_table.xml"/>
 
 </databaseChangeLog>
