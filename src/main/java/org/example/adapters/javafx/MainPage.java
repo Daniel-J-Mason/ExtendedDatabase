@@ -21,7 +21,7 @@ public class MainPage extends Application{
     @Override
     public void start(Stage window) throws IOException, URISyntaxException {
         window.setTitle("Extended Database");
-        window.setResizable(false);
+        window.setResizable(true);
         fxmlLoader.setLocation(getClass().getResource("/fxml/launchPage.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);

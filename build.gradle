@@ -17,6 +17,7 @@ javafx {
 }
 
 ext {
+    controlsFxVersion = '11.1.1'
     gsonVersion = '2.10.1'
     hamcrestVersion = '2.2'
     junitJupiterVersion = '5.9.3'
@@ -29,6 +30,7 @@ ext {
 }
 
 dependencies {
+    implementation "org.controlsfx:controlsfx:${controlsFxVersion}"
     implementation "com.google.code.gson:gson:${gsonVersion}"
     implementation "org.liquibase:liquibase-core:${liquibaseVersion}"
     implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatisSpringBootVersion}"
