@@ -1,17 +1,17 @@
-package org.example.application.domain;
+package org.example.adapters.javafx.dto;
 
-import org.example.application.domain.join.TruckDrawing;
+import org.example.adapters.javafx.dto.join.JavafxTruckDxfDto;
 
 import java.util.List;
 import java.util.UUID;
 
-public record Drawing(
+public record JavafxDxfDto(
         UUID id,
         String partCode,
         String number,
         String latestRevision,
         String description,
         
-        List<TruckDrawing> usedOnTrucks
+        List<JavafxTruckDxfDto> usedOnTrucks
 ) {
 }

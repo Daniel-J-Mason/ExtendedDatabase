@@ -9,7 +9,7 @@ public record Dxf(
         UUID id,
         String partCode,
         String number,
-        String revisionLevel,
+        String latestRevision,
         String description,
         
         List<TruckDxf> usedOnTrucks

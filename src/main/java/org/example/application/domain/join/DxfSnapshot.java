@@ -1,9 +1,9 @@
 package org.example.application.domain.join;
 
-import org.example.application.domain.Truck;
+import org.example.application.domain.Dxf;
 
-public record TruckDxf(
-        Truck truck,
+public record DxfSnapshot(
+        Dxf dxf,
         String revisionLevelAtRelease
 ) {
 }

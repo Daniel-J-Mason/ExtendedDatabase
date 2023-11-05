@@ -1,10 +1,11 @@
 package org.example.application.domain.join;
 
+import org.example.application.domain.Truck;
+
 import java.util.UUID;
 
 public record TruckDrawing(
-        UUID truckId,
-        UUID drawingId,
-        String revisionLevel
+        Truck truck,
+        String revisionLevelAtRelease
 ) {
 }
