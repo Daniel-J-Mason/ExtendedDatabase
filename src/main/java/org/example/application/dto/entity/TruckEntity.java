@@ -1,7 +1,7 @@
 package org.example.application.dto.entity;
 
-import org.example.application.domain.join.DrawingSnapshot;
-import org.example.application.domain.join.DxfSnapshot;
+import org.example.application.dto.entity.join.DrawingSnapshotEntity;
+import org.example.application.dto.entity.join.DxfSnapshotEntity;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -42,7 +42,7 @@ public interface TruckEntity {
 
     String getDesignedBy();
     
-    List<? extends DrawingSnapshot> getDrawings();
+    List<? extends DrawingSnapshotEntity> getDrawings();
     
-    List<? extends DxfSnapshot> getDxfs();
+    List<? extends DxfSnapshotEntity> getDxfs();
 }

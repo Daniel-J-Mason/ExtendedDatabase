@@ -1,11 +1,20 @@
 package org.example.adapters.javafx.dto;
 
-import org.example.application.domain.join.DrawingSnapshot;
-import org.example.application.domain.join.DxfSnapshot;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import org.example.adapters.javafx.dto.join.JavafxDrawingSnapshotDto;
+import org.example.adapters.javafx.dto.join.JavafxDxfSnapshotDto;
+import org.example.application.dto.object.TruckDto;
 
 import java.time.LocalDate;
 import java.util.List;
 
+@Getter
+@Setter
+@Builder
+@RequiredArgsConstructor
 public record JavafxTruckDto(
         String brand,
         LocalDate date,
@@ -24,7 +33,7 @@ public record JavafxTruckDto(
         String customerName,
         String designedBy,
         
-        List<DrawingSnapshot> drawings,
-        List<DxfSnapshot> dxfs
-){
+        List<JavafxDrawingSnapshotDto> drawings,
+        List<JavafxDxfSnapshotDto> dxfs
+) implements TruckDto {
 }

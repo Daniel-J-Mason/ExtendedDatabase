@@ -2,9 +2,6 @@ package org.example.application.domain;
 
 import org.example.application.domain.join.DrawingSnapshot;
 import org.example.application.domain.join.DxfSnapshot;
-import org.example.application.domain.join.TruckDrawing;
-import org.example.application.domain.join.TruckDxf;
-
 import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
