@@ -7,7 +7,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.example.application.domain.join.DrawingSnapshot;
 import org.example.application.domain.join.DxfSnapshot;
-import org.example.application.dto.entity.TruckEntity;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -18,7 +17,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-public class SqliteTruckEntity implements TruckEntity {
+public class SqliteTruckEntity {
     private UUID id;
     private String brand;
     private LocalDate date;

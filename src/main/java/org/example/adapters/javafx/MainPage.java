@@ -25,6 +25,7 @@ public class MainPage extends Application{
         fxmlLoader.setLocation(getClass().getResource("/fxml/launchPage.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
+      //  scene.getStylesheets().add("");
         window.setScene(scene);
         //window.getIcons().add(new Image(Objects.requireNonNull(LaunchPage.class.getResourceAsStream("/images/REST-ICO-128.png"))));
         window.show();

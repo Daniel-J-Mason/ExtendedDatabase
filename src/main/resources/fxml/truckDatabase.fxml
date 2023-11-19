@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import org.controlsfx.control.tableview2.TableView2?>
 
-<VBox prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.adapters.javafx.controller.TruckDatabaseController">
    <children>
       <GridPane>
         <columnConstraints>
@@ -31,67 +31,66 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.halignment="CENTER">
                <children>
                   <Label text="Brand" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="brandField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <children>
                   <Label text="Date" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="dateField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <children>
                   <Label text="Truck Number" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="truckNumberField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                <children>
                   <Label text="Latest Revision" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="latestRevisionField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                <children>
                   <Label text="Build Notes" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="buildNotesField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <children>
                   <Label text="Special Notes" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="specialNotesField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <children>
                   <Label text="Mod Size" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="modSizeField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                <children>
                   <Label text="Conduit" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="conduitField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="2" GridPane.halignment="CENTER">
                <children>
                   <Label text="Type Code" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="typeCodeField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <children>
                   <Label text="Skin Material" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="skinMaterialField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
@@ -101,46 +100,54 @@
                         <Insets left="5.0" />
                      </padding>
                   </Label>
-                  <TextField prefHeight="25.0" prefWidth="120.0" />
+                  <TextField fx:id="compartmentField" prefHeight="25.0" prefWidth="120.0" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                <children>
                   <Label text="Chassis Year" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="chassisYearField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="3" GridPane.halignment="CENTER">
                <children>
                   <Label text="Chassis Make" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="chassisMakeField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <children>
                   <Label text="Chassis Model" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="chassisModelField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <children>
                   <Label text="Customer Name" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="customerNameField" />
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                <children>
                   <Label text="Designed By" HBox.hgrow="ALWAYS" />
-                  <TextField />
+                  <TextField fx:id="designedByField" />
                </children>
             </HBox>
-            <Button mnemonicParsing="false" text="Clear Entries" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" text="Save Default Fields" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
          </children>
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
       </GridPane>
+      <HBox alignment="CENTER" prefHeight="20.0" prefWidth="200.0" spacing="60.0">
+         <children>
+            <Button mnemonicParsing="false" text="Clear Entries" />
+            <Button mnemonicParsing="false" text="Save Default Fields" />
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonClicked" text="Search" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
       <MenuBar>
         <menus>
           <Menu mnemonicParsing="false" text="Filters">
