@@ -1,9 +1,9 @@
 package org.example.application.dto.object.join;
 
-import org.example.application.domain.Truck;
+import org.example.application.dto.object.TruckDto;
 
 public interface TruckDrawingDto{
-    Truck getTruck();
+    TruckDto truck();
     
-    String getRevisionLevelAtRelease();
+    String revisionLevelAtRelease();
 }

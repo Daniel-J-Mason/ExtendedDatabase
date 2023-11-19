@@ -3,7 +3,7 @@ package org.example.application.dto.object.join;
 import org.example.application.dto.object.TruckDto;
 
 public interface TruckDxfDto{
-    TruckDto getTruck();
+    TruckDto truck();
 
-    String getRevisionLevelAtRelease();
+    String revisionLevelAtRelease();
 }

@@ -7,39 +7,39 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface TruckDto {
-    String getBrand();
+    String brand();
     
-    LocalDate getDate();
+    LocalDate date();
     
-    String getTruckNumber();
+    String truckNumber();
     
-    Integer getRevisionLevel();
+    Integer revisionLevel();
     
-    String getMainNotes();
+    String mainNotes();
     
-    String getSpecialNotes();
+    String specialNotes();
     
-    String getModSize();
+    String modSize();
     
-    String getConduit();
+    String conduit();
     
-    Integer getTypeCode();
+    Integer typeCode();
     
-    String getSkinMaterial();
+    String skinMaterial();
     
-    String getCompartmentMaterial();
+    String compartmentMaterial();
     
-    Integer getChassisYear();
+    Integer chassisYear();
     
-    String getChassisMake();
+    String chassisMake();
     
-    String getChassisModel();
+    String chassisModel();
     
-    String getCustomerName();
+    String customerName();
     
-    String getDesignedBy();
+    String designedBy();
     
-    List<? extends DrawingSnapshotDto> getDrawings();
+    List<? extends DrawingSnapshotDto> drawings();
     
-    List<? extends DxfSnapshotDto> getDxfs();
+    List<? extends DxfSnapshotDto> dxfs();
 }

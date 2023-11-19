@@ -6,15 +6,15 @@ import java.util.List;
 import java.util.UUID;
 
 public interface DrawingDto{
-    UUID getId();
+    UUID id();
     
-    String getPartCode();
+    String partCode();
     
-    String getNumber();
+    String number();
     
-    String getLatestRevision();
+    String latestRevision();
     
-    String getDescription();
+    String description();
     
-    List<? extends TruckDrawingDto> getUsedOnTrucks();
+    List<? extends TruckDrawingDto> usedOnTrucks();
 }

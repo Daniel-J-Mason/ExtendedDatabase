@@ -1,20 +1,20 @@
 package org.example.application.dto.object;
 
-import org.example.application.dto.object.join.mapper.TruckDxfDto;
+import org.example.adapters.javafx.dto.join.JavafxTruckDxfDto;
 
 import java.util.List;
 import java.util.UUID;
 
 public interface DxfDto{
-    UUID getId();
+    UUID id();
     
-    String getPartCode();
+    String partCode();
     
-    String getNumber();
+    String number();
     
-    String getLatestRevision();
+    String latestRevision();
     
-    String getDescription();
+    String description();
     
-    List<? extends TruckDxfDto> getUsedOnTrucks();
+    List<JavafxTruckDxfDto> usedOnTrucks();
 }
